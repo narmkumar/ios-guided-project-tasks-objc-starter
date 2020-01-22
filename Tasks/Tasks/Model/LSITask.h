@@ -26,7 +26,7 @@
 
 - (instancetype)initWithName:(NSString *)name
                         date:(NSDate *)date
-                        date:(NSString *)note;
+                        note:(NSString *)note;
 
 
 

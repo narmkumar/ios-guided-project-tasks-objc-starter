@@ -9,7 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "../Tasks/Model/LSITask.h"  // #import bug? may need relative path to a Model group
 #import "LSITask.h"
-
+#import "NSString+LSIRepeatString.h"
+ 
 @interface TasksTests : XCTestCase
 
 @end
@@ -25,7 +26,7 @@
 	printf("Use an Objective-C unit test like a Playground scratch pad");
 	
 	// Create a task model object
-    LSITask *task = [[LSITask alloc] initWithName:@"Walk the dog" date:[NSDate now] date:@"Row needs to get outside"];
+    LSITask *task = [[LSITask alloc] initWithName:@"Walk the dog" date:[NSDate now] note:@"Row needs to get outside"];
     
     NSLog(@"Create a new task: %@", task);
     
@@ -34,6 +35,8 @@
 	// Try creating other objects or calling methods to verify you understand
 	// Objective-C code.
 
+    NSString *phone = @"iPhone";
+    NSLog(@"Parrot: %@", [phone lsi_repeatString]);
 }
 
 @end

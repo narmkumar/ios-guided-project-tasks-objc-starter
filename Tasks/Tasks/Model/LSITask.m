@@ -28,7 +28,7 @@
 
 - (instancetype)initWithName:(NSString *)name
                         date:(NSDate *)date
-                        date:(NSString *)note {
+                        note:(NSString *)note {
     if (self = [super init]) {
         _name = name;
         _date = date;
