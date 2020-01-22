@@ -7,8 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-//#import "../Tasks/Model/LSITask.h"  // #import bug? may need relative path to a Model group
-//#import "LSITask.h"
+#import "../Tasks/Model/LSITask.h"  // #import bug? may need relative path to a Model group
+#import "LSITask.h"
 
 @interface TasksTests : XCTestCase
 
@@ -25,8 +25,12 @@
 	printf("Use an Objective-C unit test like a Playground scratch pad");
 	
 	// Create a task model object
-	// LSITask *task = [[LSITask alloc] init];
-	
+    LSITask *task = [[LSITask alloc] initWithName:@"Walk the dog" date:[NSDate now] date:@"Row needs to get outside"];
+    
+    NSLog(@"Create a new task: %@", task);
+    
+    task = nil; // ARC will clean up the memory and run dealloc
+    
 	// Try creating other objects or calling methods to verify you understand
 	// Objective-C code.
 

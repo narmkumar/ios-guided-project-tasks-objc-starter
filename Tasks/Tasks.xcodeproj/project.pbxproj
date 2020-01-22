@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B62330523D8B9D0003DF729 /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B62330423D8B9D0003DF729 /* LSITask.m */; };
+		4B62330923D8BA3C003DF729 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B62330823D8BA3C003DF729 /* Default-568h@2x.png */; };
 		BD08F328234E3AF800771883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F327234E3AF800771883 /* AppDelegate.m */; };
 		BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F32A234E3AF800771883 /* SceneDelegate.m */; };
 		BD08F333234E3AF900771883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD08F332234E3AF900771883 /* Assets.xcassets */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B62330323D8B9D0003DF729 /* LSITask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITask.h; sourceTree = "<group>"; };
+		4B62330423D8B9D0003DF729 /* LSITask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITask.m; sourceTree = "<group>"; };
+		4B62330823D8BA3C003DF729 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BD08F323234E3AF800771883 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD08F326234E3AF800771883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD08F327234E3AF800771883 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +71,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B62330623D8B9F1003DF729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B62330323D8B9D0003DF729 /* LSITask.h */,
+				4B62330423D8B9D0003DF729 /* LSITask.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B62330723D8BA08003DF729 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B62330823D8BA3C003DF729 /* Default-568h@2x.png */,
+				BD08F353234E3B3900771883 /* Main.storyboard */,
+				BD08F332234E3AF900771883 /* Assets.xcassets */,
+				BD08F334234E3AF900771883 /* LaunchScreen.storyboard */,
+				BD08F337234E3AF900771883 /* Info.plist */,
+				BD08F338234E3AF900771883 /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BD08F31A234E3AF800771883 = {
 			isa = PBXGroup;
 			children = (
@@ -91,13 +118,10 @@
 				BD08F327234E3AF800771883 /* AppDelegate.m */,
 				BD08F329234E3AF800771883 /* SceneDelegate.h */,
 				BD08F32A234E3AF800771883 /* SceneDelegate.m */,
+				4B62330623D8B9F1003DF729 /* Model */,
 				BD21D029234E40E200E45282 /* Task Table View */,
 				BD21D028234E3F8D00E45282 /* Task Detail */,
-				BD08F353234E3B3900771883 /* Main.storyboard */,
-				BD08F332234E3AF900771883 /* Assets.xcassets */,
-				BD08F334234E3AF900771883 /* LaunchScreen.storyboard */,
-				BD08F337234E3AF900771883 /* Info.plist */,
-				BD08F338234E3AF900771883 /* main.m */,
+				4B62330723D8BA08003DF729 /* Resources */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -210,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD08F354234E3B3900771883 /* Main.storyboard in Resources */,
+				4B62330923D8BA3C003DF729 /* Default-568h@2x.png in Resources */,
 				BD08F336234E3AF900771883 /* LaunchScreen.storyboard in Resources */,
 				BD08F333234E3AF900771883 /* Assets.xcassets in Resources */,
 			);
@@ -232,6 +257,7 @@
 				BD08F328234E3AF800771883 /* AppDelegate.m in Sources */,
 				BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */,
 				BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */,
+				4B62330523D8B9D0003DF729 /* LSITask.m in Sources */,
 				BD08F339234E3AF900771883 /* main.m in Sources */,
 				BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */,
 			);
@@ -383,7 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCRLD36TZ6;
-				INFOPLIST_FILE = Tasks/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tasks/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCRLD36TZ6;
-				INFOPLIST_FILE = Tasks/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tasks/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
